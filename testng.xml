@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="ebay" value="https://www.ebay.com"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/ASUS/IdeaProjects/SeleniumAssignment">
+        <classes>
+            <class name ="org.example.Main">
+                <methods>
+                    
+                </methods>
+            </class>
+
+
+            <class name = "org.example.SelectTest">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="selectCategory"/>
+                    <include name="verifyCategory"/>
+                    <include name="searchMobile"/>
+                    <include name="assertSearchResultValueMobilePhone"/>
+                    <include name="extractAndPrintDetails"/>
+                    <include name="selectFirstItem"/>
+                </methods>
+            </class>
+
+            <class name="org.example.Mobile">
+                <methods>
+                    <include name="SelectItemName"/>
+                    <include name="SelectItemPrice"/>
+                    <include name="SelectItemQuantity"/>
+                    <include name="setcolour"/>
+                    <include name="setplug"/>
+
+                    <include name="setCapacity"/>
+                    <include name="addToTheCart"/>
+                    <include name="assertShoppingcart"/>
+                    <include name="checkOut"/>
+                    <include name="gustMode"/>
+                    <include name="assertCheckout"/>
+
+
+
+
+                </methods>
+
+            </class>
+ 
+        </classes>
+    </test>
+</suite>
